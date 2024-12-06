@@ -89,7 +89,7 @@ class RAG(object):
         Given a list of values, find the center and compare with the neighbours.
         If center is connected to a different region, add an edge in the graph.
         """
-        values = values.flatten().astype(np.int)
+        values = values.flatten().astype(int)
         center = len(values)//2
         
         for vx in range(len(values)):
